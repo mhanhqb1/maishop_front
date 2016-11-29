@@ -22,22 +22,22 @@
                                             <div class="tab-content">
                                                 <div id="tab-c1f410-0" role="tabpanel" class="tab-pane active">
                                                     <div class="owl-carc1f410 owl-carousel owl-theme">
-                                                        <?php for ($i = 0; $i < 10; $i++): ?>
+                                                        <?php foreach ($products as $p): ?>
                                                             <div class="product-thumb transition">
                                                                 <div class="product-inner">
                                                                     <div class="image">
                                                                         <a href="http://7427.chilishop.net/ban-tron-3-chan">
-                                                                            <img src="<?php echo BASE_URL ?>/img/5-270x270.jpg" alt="Bàn tròn 3 chân" title="Bàn tròn 3 chân" class="img-responsive">
+                                                                            <img src="<?php echo $p['image']; ?>" alt="<?php echo $p['name']; ?>" title="<?php echo $p['name']; ?>" class="img-responsive">
                                                                         </a>
                                                                     </div>
-                                                                    <div class="status-sale"> -25%</div>
+                                                                    <!--<div class="status-sale"> -25%</div>-->
                                                                     <div class="caption" style="">
-                                                                        <h4><a href="http://7427.chilishop.net/ban-tron-3-chan">Bàn tròn 3 chân <?php echo $i; ?></a></h4>
-                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+                                                                        <h4><a href="http://7427.chilishop.net/ban-tron-3-chan"><?php echo $p['name']; ?></a></h4>
+                                                                        <p class="description"><?php echo $p['description']; ?></p>
 
                                                                         <div class="price">
-                                                                            <span class="price-old">1.600.000 VNĐ</span>
-                                                                            <span class="price-new">1.200.000 VNĐ</span>
+                                                                            <!--<span class="price-old">1.600.000 VNĐ</span>-->
+                                                                            <span class="price-new"><?php echo $p['price']; ?> VNĐ</span>
 
                                                                             <div class="rating no-star">
                                                                                 <i class="fa fa-star-o"></i>
@@ -53,7 +53,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        <?php endfor; ?>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                     <div class="clearfix"></div>
                                                 </div>
