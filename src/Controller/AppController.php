@@ -68,20 +68,13 @@ class AppController extends Controller
                 return $this->redirect('https://' . env('SERVER_NAME') . $this->here);
             }
         }
-        parent::beforeFilter();
+        parent::beforeFilter($event);
 
         // Set common param
         $this->controller = strtolower($this->request->params['controller']);
         $this->action = strtolower($this->request->params['action']);
         $this->set('controller', $this->controller);
         $this->set('action', $this->action);
-
-        // Only allow mobile access
-        if (Configure::read('Config.SupportPC') != true && !$this->RequestHandler->isMobile() && $this->controller != 'infos') {
-            return $this->redirect('/pc');
-        } else if (Configure::read('Config.SupportPC') != true && $this->RequestHandler->isMobile() && $this->controller == 'infos' && $this->action == 'pc') {
-            return $this->redirect('/');
-        }
         
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
@@ -89,6 +82,6 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
         
-        $this->viewBuilder()->layout('campus');
+        $this->viewBuilder()->layout('maishop');
     }
 }
