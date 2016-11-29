@@ -50,6 +50,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Common');
     }
 
     /**
@@ -81,6 +82,9 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+        
+        $categories = $this->Common->getAllCategories();
+        $this->set('categories', $categories);
         
         $this->viewBuilder()->layout('maishop');
     }

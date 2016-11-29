@@ -79,29 +79,16 @@
 
                                                             <span>Sản phẩm</span> 
                                                         </a>
+                                                        <?php if (!empty($categories)): ?>
                                                         <span class="expander"></span>
                                                         <ul class="sub-menu">
+                                                            <?php foreach ($categories as $c): ?>
                                                             <li>
-                                                                <a href="http://7427.chilishop.net/ban">
-                                                                    Bàn                      </a>
+                                                                <a href="http://7427.chilishop.net/ban"><?php echo $c['name']; ?></a>
                                                             </li>
-                                                            <li>
-                                                                <a href="http://7427.chilishop.net/ghe">
-                                                                    Ghế                      </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://7427.chilishop.net/index.php?route=product/category&amp;path=70">
-                                                                    Sofa                      </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://7427.chilishop.net/den">
-                                                                    Đèn                      </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://7427.chilishop.net/do-dung-go">
-                                                                    Đồ dùng gỗ                      </a>
-                                                            </li>
+                                                            <?php endforeach; ?>
                                                         </ul>
+                                                        <?php endif; ?>
                                                     </li>
                                                     <li class="hchild">
                                                         <a "="">
@@ -204,41 +191,16 @@
                     <div id="navbar-collapse-DM_1" class="menu-content">
                         <div class="close-menu"></div>
                         <ul class="menu">
+                            <?php if (!empty($categories)): ?>
+                            <?php foreach ($categories as $c): ?>
                             <li>
                                 <a href="http://7427.chilishop.net/ban">
-                                    <img src="<?php echo BASE_URL ?>/img/Table-60x50.png" class="img-thumbnail">
+                                    <img src="<?php echo $c['image_path']; ?>" class="img-thumbnail">
 
-                                    <span>Bàn</span>
+                                    <span><?php echo $c['name']; ?></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="http://7427.chilishop.net/ghe">
-                                    <img src="<?php echo BASE_URL ?>/img/Chair-60x50.png" class="img-thumbnail">
-
-                                    <span>Ghế</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://7427.chilishop.net/den">
-                                    <img src="<?php echo BASE_URL ?>/img/Light-60x50.png" class="img-thumbnail">
-
-                                    <span>Đèn</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://7427.chilishop.net/index.php?route=product/category&amp;path=70">
-                                    <img src="<?php echo BASE_URL ?>/img/Sofa-60x50.png" class="img-thumbnail">
-
-                                    <span>Sofa</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://7427.chilishop.net/do-dung-go">
-                                    <img src="<?php echo BASE_URL ?>/img/Accessories-60x50.png" class="img-thumbnail">
-
-                                    <span>Đồ dùng gỗ</span>
-                                </a>
-                            </li>
+                            <?php endforeach; endif; ?>
                         </ul>
                     </div>
                 </div>
