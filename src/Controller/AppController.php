@@ -76,6 +76,7 @@ class AppController extends Controller
         $this->action = strtolower($this->request->params['action']);
         $this->set('controller', $this->controller);
         $this->set('action', $this->action);
+        $this->set('pageTitle', 'Mai Shop');
         
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])

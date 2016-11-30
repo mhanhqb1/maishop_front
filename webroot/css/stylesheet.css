@@ -521,7 +521,7 @@ label{font-weight:400}
 .bg-ms-product .tab-content{padding:15px 0 0;border:0}
 .bg-ms-product .tab-content p{font-size:15px;line-height:24px}
 .product-late-ms{margin-top:40px}
-.area-title h3{border:0;padding:0;margin:0;font-size:18px;font-weight:700;color:#555;text-transform:uppercase;font-style:normal;padding-bottom:20px;margin-bottom:25px;position:relative}
+.area-title h3{border:0;padding:0;margin:0;font-size:18px;font-weight:700;color:#555;text-transform:uppercase;font-style:normal;padding-bottom:20px;padding-top:20px;margin-bottom:25px;position:relative}
 .area-title h3:after{position:absolute;content:"";bottom:0;left:0;width:30px;height:3px;background:#ff791f}
 .featured-item{clear:both;margin-bottom:0}
 .featured-item .owl-item{padding-left:4px;padding-right:4px}
