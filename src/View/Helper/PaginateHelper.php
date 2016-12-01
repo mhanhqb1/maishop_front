@@ -2,6 +2,7 @@
 
 namespace App\View\Helper;
 
+use Cake\Routing\Router;
 /**
  * Render paging html
  * 
@@ -41,7 +42,7 @@ class PaginateHelper extends AppHelper {
                     }
                 }
             }
-            $url = $this->request->url . '?';
+            $url = Router::url($this->here, true) . '?';
             if (!empty($param)) {
                 $url = $url . implode('&', $param) . '&';
             }

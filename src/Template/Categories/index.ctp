@@ -58,7 +58,7 @@
                                 <i class="fa fa-star-o"></i>
                             </div>
                         </div>
-                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 78 & #39; );">
+                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add('<?php echo $p['id']; ?>');">
                             <span>Thêm vào giỏ</span>
                         </button>
                     </div>

@@ -4,8 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title><?php echo !empty($pageTitle) ? $pageTitle : DEFAULT_SITE_TITLE; ?></title>
-        <meta name="description" content="Furniture">
+        <meta name="description" content="<?php echo !empty($pageTitle) ? $pageTitle : DEFAULT_SITE_TITLE; ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <base href="<?php echo BASE_URL; ?>"/>
         <link href="http://7427.chilishop.net/image/catalog/favicon.png" rel="icon">
         
         <link href="<?php echo BASE_URL ?>/css/bootstrap.min.css?<?php echo VERSION_DATE ?>" rel="stylesheet" media="screen">

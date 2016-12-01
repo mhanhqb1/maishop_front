@@ -26,7 +26,7 @@
                                                             <div class="product-thumb transition">
                                                                 <div class="product-inner">
                                                                     <div class="image">
-                                                                        <a href="http://7427.chilishop.net/ban-tron-3-chan">
+                                                                        <a href="<?php echo BASE_URL; ?>/products/detail/<?php echo $p['id']; ?>">
                                                                             <img src="<?php echo $p['image']; ?>" alt="<?php echo $p['name']; ?>" title="<?php echo $p['name']; ?>" class="img-responsive">
                                                                         </a>
                                                                     </div>
@@ -47,7 +47,7 @@
                                                                                 <i class="fa fa-star-o"></i>
                                                                             </div>
                                                                         </div>
-                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 78 & #39; );">
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add('<?php echo $p['id']; ?>');">
                                                                             <span>Thêm vào giỏ</span>
                                                                         </button>
                                                                     </div>
@@ -84,7 +84,7 @@
                                                                                 <i class="fa fa-star-o"></i>
                                                                             </div>
                                                                         </div>
-                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 78 & #39; );">
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add('1');">
                                                                             <span>Thêm vào giỏ</span>
                                                                         </button>
                                                                     </div>
@@ -238,7 +238,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>                </div>
+                                        </div>                
+                                    </div>
                                 </div>
                             </div>
                         </div>
