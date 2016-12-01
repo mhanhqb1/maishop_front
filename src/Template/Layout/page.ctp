@@ -3,7 +3,7 @@
     <head class="active">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title><?php echo !empty($pageTitle) ? $pageTitle : ''; ?></title>
+        <title><?php echo !empty($pageTitle) ? $pageTitle : DEFAULT_SITE_TITLE; ?></title>
         <meta name="description" content="Furniture">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="http://7427.chilishop.net/image/catalog/favicon.png" rel="icon">
@@ -44,16 +44,12 @@
         <header>
             <?php echo $this->element('header'); ?>
         </header>
-        <div class="container">
-            <div class="title-box">
-                <h1 class="title-style">Ghế bar PAD</h1>
-                <ul class="breadcrumb">
-                    <li><a href="<?php echo BASE_URL; ?>">Trang chủ</a></li>
-                    <li class="active"><a href="<?php echo BASE_URL; ?>" class="active">Ghế bar PAD</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container product-ms container_<?php echo $controller . '_' . $action; ?>">
+        
+        <?php if (!empty($breadcrumb)) : ?>
+            <?php echo $this->Breadcrumb->render($breadcrumb, $breadcrumbTitle); ?>
+        <?php endif ?>
+        
+        <div class="container <?php echo $controller; ?>-ms container_<?php echo $controller . '_' . $action; ?>">
             <div class="row">
                 <div id="column-left" class="col-md-3 col-lg-3 col-xs-12 hidden-xs hidden-sm">
                     <?php echo $this->element('left_menu'); ?>

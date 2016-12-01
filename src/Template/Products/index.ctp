@@ -1,140 +1,734 @@
-<div id="content" class="col-md-9 col-sm-12">
-    <div class="position-display"></div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="single-product-image">
-                <div class="single-pro-main-image">
-                    <a href="http://7427.chilishop.net/image/cache/catalog/san_pham/7-650x650.jpg">
-                        <div class="zoomWrapper">
-                            <img id="optima_zoom" src="<?php echo BASE_URL ?>/img/7-450x450.jpg" data-zoom-image="http://7427.chilishop.net/image/cache/catalog/san_pham/7-650x650.jpg" title="Ghế bar PAD" alt="Ghế bar PAD" class="img-responsive">
+<div class="container categories-ms">
+            <div class="row">    
+                <div id="column-left" class="col-md-3 col-lg-3 col-xs-12 hidden-xs hidden-sm">
+                    <div class="menu_category">
+                        <div class="navbar-header">
+                            <h3 id="category">Danh Mục</h3>
+                            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
                         </div>
-                    </a>   
-                </div>
-                <div class="single-pro-thumb">
-                    <ul class="thubm-caro owl-carousel owl-theme" id="optima_gallery">
-                        <li>
-                            <a href="<?php echo BASE_URL ?>/img/7-150x150.jpg" title="Ghế bar PAD" data-image="http://7427.chilishop.net/image/cache/catalog/san_pham/7-650x650.jpg" data-zoom-image="http://7427.chilishop.net/image/cache/catalog/san_pham/7-650x650.jpg"> <img class="img-responsive" src="<?php echo BASE_URL ?>/img/7-150x150.jpg" title="Ghế bar PAD" alt="Ghế bar PAD"> </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo BASE_URL ?>/img/8-150x150.jpg" title="Ghế bar PAD" data-image="http://7427.chilishop.net/image/cache/catalog/san_pham/8-650x650.jpg" data-zoom-image="http://7427.chilishop.net/image/cache/catalog/san_pham/8-650x650.jpg"> <img class="img-responsive" src="<?php echo BASE_URL ?>/img/8-150x150.jpg" title="Ghế bar PAD" alt="Ghế bar PAD"> </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo BASE_URL ?>/img/19-150x150.jpg" title="Ghế bar PAD" data-image="http://7427.chilishop.net/image/cache/catalog/san_pham/19-650x650.jpg" data-zoom-image="http://7427.chilishop.net/image/cache/catalog/san_pham/19-650x650.jpg"> <img class="img-responsive" src="<?php echo BASE_URL ?>/img/19-150x150.jpg" title="Ghế bar PAD" alt="Ghế bar PAD"> </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>                 
-        </div>
-        <div class="col-sm-6">
-            <div class="single-product-description">
-                <div class="pro-desc">
-                    <h2>Ghế bar PAD</h2>
-                    <div class="desc2">
-                        <p class="hidden">Mô tả</p>
-                        <p>Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệm chuyên về thiết kế kiến trúc - nội thấ...</p>
-                    </div>
-
-                    <div class="rating">
-                        <p>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-
-                            <a class="sto" href="http://7427.chilishop.net/" onclick="$( & #39; a[href = \ & #39; #tab - review\ & #39; ] & #39; ).trigger( & #39; click & #39; ); return false;">
-                                0 Bình luận                                       </a>
-                        </p>
-                    </div>
-                    <ul class="list-unstyled pd-price">
-                        <li>
-                            <span class="price-new">900.000 VNĐ</span>
-                        </li>
-
-                    </ul>
-                    <ul class="list-unstyled">
-                        <li class="hidden">Dòng sản phẩm: <span class="span">Ghế bar PAD</span></li>
-                        <li class="hidden">Số lượng sản phẩm trong kho: <span class="span">92</span></li>
-                    </ul>
-                </div><!--  <div class="pro-desc">-->
-            </div>
-            <div id="product">
-                <h3>Tùy chọn đang có</h3>
-                <div class="product_details_cart">
-                    <div class="product-quantity">
-                        <div class="numbers-row">                      
-                            <input type="text" name="quantity" value="1" id="input-quantity">
-                            <input type="hidden" name="product_id" value="80">
-                            <div class="dec qtybutton">-</div>
-                            <div class="inc qtybutton">+</div>
+                        <div class="">
+                            <ul class="nav">
+                                <li> <a href="http://7427.chilishop.net/ban" class=""> Bàn </a>
+                                </li>
+                                <li class="active"> <a href="http://7427.chilishop.net/ghe" class="active"> Ghế </a>
+                                </li>
+                                <li> <a href="http://7427.chilishop.net/den" class=""> Đèn </a>
+                                </li>
+                                <li> <a href="http://7427.chilishop.net/index.php?route=product/category&amp;path=70" class=""> Sofa </a>
+                                </li>
+                                <li> <a href="http://7427.chilishop.net/do-dung-go" class=""> Đồ dùng gỗ </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="button-cart">
-                        <button type="button" id="button-cart" data-loading-text="Đang Xử lý..." class="push_button button shopng-btn">Thêm vào giỏ</button>
+
+
+                    <div class="dv-builder-full">
+                        <div class="dv-builder list_product">
+                            <div class="dv-module-content">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                        <div class="dv-item-module ">
+                                            <div class="product_module latest_product">
+                                                <h3 class="title title_latest">Mới nhất</h3>
+                                                <div class="product_module_content">
+                                                    <div class="row product-layout-custom">
+                                                        <div class="medium">
+                                                            <div class="product-thumb transition">
+                                                                <div class="product-inner">
+                                                                    <div class="image">
+                                                                        <a href="http://7427.chilishop.net/ghe-dau-hauteur-93cm">
+                                                                            <img src="./Ghế_files/30-100x100.jpg" alt="Ghế đẩu Hauteur 93cm" title="Ghế đẩu Hauteur 93cm" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="caption">
+                                                                        <h4><a href="http://7427.chilishop.net/ghe-dau-hauteur-93cm">Ghế đẩu Hauteur 93cm</a></h4>
+                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                                                        <div class="price">
+                                                                            2.500.000 VNĐ                                        
+                                                                            <div class="rating no-star">
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 97 & #39; );">
+                                                                            <span>Thêm vào giỏ</span>
+                                                                        </button>
+                                                                        <div class="button-group">
+                                                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 97 & #39; );">
+                                                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                                                            </button>
+                                                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 97 & #39; );">
+                                                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="medium">
+                                                            <div class="product-thumb transition">
+                                                                <div class="product-inner">
+                                                                    <div class="image">
+                                                                        <a href="http://7427.chilishop.net/sofa-nagi">
+                                                                            <img src="./Ghế_files/28-100x100.jpg" alt="Sofa Nagi" title="Sofa Nagi" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="status-sale"> -8%</div>
+                                                                    <div class="caption">
+                                                                        <h4><a href="http://7427.chilishop.net/sofa-nagi">Sofa Nagi</a></h4>
+                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                                                        <div class="price">
+                                                                            <span class="price-old">6.500.000 VNĐ</span>
+                                                                            <span class="price-new">6.000.000 VNĐ</span>
+
+                                                                            <div class="rating no-star">
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 96 & #39; );">
+                                                                            <span>Thêm vào giỏ</span>
+                                                                        </button>
+                                                                        <div class="button-group">
+                                                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 96 & #39; );">
+                                                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                                                            </button>
+                                                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 96 & #39; );">
+                                                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="medium">
+                                                            <div class="product-thumb transition">
+                                                                <div class="product-inner">
+                                                                    <div class="image">
+                                                                        <a href="http://7427.chilishop.net/den-ban-pl1">
+                                                                            <img src="./Ghế_files/25-100x100.jpg" alt="Đèn bàn PL1" title="Đèn bàn PL1" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="caption">
+                                                                        <h4><a href="http://7427.chilishop.net/den-ban-pl1">Đèn bàn PL1</a></h4>
+                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                                                        <div class="price">
+                                                                            160.000 VNĐ                                        
+                                                                            <div class="rating no-star">
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 95 & #39; );">
+                                                                            <span>Thêm vào giỏ</span>
+                                                                        </button>
+                                                                        <div class="button-group">
+                                                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 95 & #39; );">
+                                                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                                                            </button>
+                                                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 95 & #39; );">
+                                                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="medium">
+                                                            <div class="product-thumb transition">
+                                                                <div class="product-inner">
+                                                                    <div class="image">
+                                                                        <a href="http://7427.chilishop.net/Gh%E1%BA%BF%20nh%E1%BB%B1a%20Hansen%20ghe-nhua-hansen">
+                                                                            <img src="./Ghế_files/23-100x100.jpg" alt="Ghế nhựa Hansen" title="Ghế nhựa Hansen" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="caption">
+                                                                        <h4><a href="http://7427.chilishop.net/Gh%E1%BA%BF%20nh%E1%BB%B1a%20Hansen%20ghe-nhua-hansen">Ghế nhựa Hansen</a></h4>
+                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                                                        <div class="price">
+                                                                            1.500.000 VNĐ                                        
+                                                                            <div class="rating no-star">
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 93 & #39; );">
+                                                                            <span>Thêm vào giỏ</span>
+                                                                        </button>
+                                                                        <div class="button-group">
+                                                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 93 & #39; );">
+                                                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                                                            </button>
+                                                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 93 & #39; );">
+                                                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="medium">
+                                                            <div class="product-thumb transition">
+                                                                <div class="product-inner">
+                                                                    <div class="image">
+                                                                        <a href="http://7427.chilishop.net/ghe-tu-zon">
+                                                                            <img src="./Ghế_files/21-100x100.jpg" alt="Ghế tựa Zon" title="Ghế tựa Zon" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="caption">
+                                                                        <h4><a href="http://7427.chilishop.net/ghe-tu-zon">Ghế tựa Zon</a></h4>
+                                                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                                                        <div class="price">
+                                                                            1.500.000 VNĐ                                        
+                                                                            <div class="rating no-star">
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                                <i class="fa fa-star-o"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 92 & #39; );">
+                                                                            <span>Thêm vào giỏ</span>
+                                                                        </button>
+                                                                        <div class="button-group">
+                                                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 92 & #39; );">
+                                                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                                                            </button>
+                                                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 92 & #39; );">
+                                                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <p class="tags-ms">
-                    <label>Xu hướng tìm kiếm:</label>
-                    <a href="http://7427.chilishop.net/index.php?route=product/search&amp;tag=gh%E1%BA%BF">ghế</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="bg-ms-product">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="http://7427.chilishop.net/#tab-description" data-toggle="tab">Mô tả</a></li>
-                    <li><a href="http://7427.chilishop.net/#tab-review" data-toggle="tab">Đánh giá (0)</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active bottom20" id="tab-description"><p>Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệm chuyên về thiết kế kiến trúc - nội thất, thi công tổng thể các công trình xây dựng và nội thất. </p><p>Sản xuất các sản phẩm đồ gỗ nội ngoại thất và kinh doanh nguyên vật liệu phục vụ cho việc sản xuất đồ gỗ - nội thất.Các sản phẩm gỗ nội thất bao gồm: tủ bếp, bàn, ghế, giường, tủ,... các sản phẩm gỗ xây dựng gồm: cửa, cầu thang, sàn, trần, vách, ván cốp pha,... của Công ty chúng tôi được sản xuất trên dây chuyền công nghệ hiện đại, nguyên liệu gỗ được nhập khẩu từ: Nga, Mỹ, Lào, Malaysia… và đặc biệt nguyên liệu gỗ đã qua tẩm sấy, chống cong vênh, nứt nẻ, mối mọt nên đảm bảo về mặt kỹ thuật và mỹ thuật.</p><p style="text-align: center; "><img src="<?php echo BASE_URL ?>/img/7.jpg"><br></p><p>Công ty có nhà máy sản xuất tại xxxxxx.</p><p>Với đội ngũ tư vấn thiết kế chuyên nghiệp, nhiệt tình, sáng tạo, luôn luôn học hỏi để nâng cao trình độ. Đội ngũ công nhân lành nghề với bề dày kinh nghiệm, làm việc với tinh thần trách nhiệm cao, sẵn sàng đáp ứng những nhu cầu cao của khách hàng…Chúng tôi tự hào là công ty có nhiều kinh nghiệm trong việc lĩnh vực thiết kế - thi công và bảo trì nội thất tại việt nam. Đã được rất nhiều sự ủng hộ từ phía khách hàng. </p><p>Từ khâu tư vấn thiết kế đến thực hiện thi công các công trình nội thất với quy mô lớn sang trọng. Với phương châm "Luôn luôn mang lại sự tin cậy và hài lòng cho khách hàng" Chúng tôi luôn phấn đấu và sẽ luôn cố gắng để không phụ lòng mong mỏi của khách hàng. Xứng đáng là công ty đi tiên phong trong lĩnh vực nội thất.</p></div>
-                    <div class="tab-pane" id="tab-review">
-                        <form class="form-horizontal" id="form-review">
-                            <div id="review"><p>Không có đánh giá cho sản phẩm này.</p>
-                            </div>
-                            <h2>Gửi Bình luận</h2>
-                            <div class="form-group required">
-                                <div class="col-sm-12">
-                                    <label class="control-label" for="input-name">Họ &amp; Tên:</label>
-                                    <input type="text" name="name" value="" id="input-name" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <div class="col-sm-12">
-                                    <label class="control-label" for="input-review">Nội dung:</label>
-                                    <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
-                                    <div class="help-block"><span style="color: #FF0000;">Lưu ý:</span> không hỗ trợ HTML!</div>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <div class="col-sm-12">
-                                    <label class="control-label">Cho điểm:</label>
-                                    &nbsp;&nbsp;&nbsp; Bình thường&nbsp;
-                                    <input type="radio" name="rating" value="1">
-                                    &nbsp;
-                                    <input type="radio" name="rating" value="2">
-                                    &nbsp;
-                                    <input type="radio" name="rating" value="3">
-                                    &nbsp;
-                                    <input type="radio" name="rating" value="4">
-                                    &nbsp;
-                                    <input type="radio" name="rating" value="5">
-                                    &nbsp;Tốt</div>
-                            </div>
-                            <div class="buttons clearfix">
-                                <div class="pull-right">
-                                    <button type="button" id="button-review" data-loading-text="Đang Xử lý..." class="btn btn-primary">Tiếp tục</button>
-                                </div>
-                            </div>
-                        </form>
+                <div id="content" class="col-md-9 col-sm-12 category_page">
+                    <div class="position-display">
+                    </div>                            <div class="row hidden-xs">
                     </div>
-                </div>
+                    <div class="page-selector">
+                        <div class="pages-box hidden-xs">
+                            <a href="http://7427.chilishop.net/index.php?route=product/compare" id="compare-total">So sánh sản phẩm (0)</a>
+                        </div>
+                        <div class="shop-grid-controls">
+                            <div class="entry hidden-md hidden-sm hidden-xs">
+                                <button type="button" id="grid-view" class="view-button grid active" data-toggle="tooltip" title="" data-original-title="Lưới"></button>
+                                <button type="button" id="list-view" class="view-button list" data-toggle="tooltip" title="" data-original-title="Danh sách"></button>
+                            </div>
+                            <div class="entry hidden-md hidden-sm hidden-xs">
+                                <div class="inline-text">Sắp xếp:</div>
+                                <div class="simple-drop-down">
+                                    <select id="input-sort" onchange="location = this.value;">
+                                        <option value="http://7427.chilishop.net/ghe?sort=p.sort_order&amp;order=ASC" selected="selected">Mặc định</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=pd.name&amp;order=ASC">Tên (A - Z)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=pd.name&amp;order=DESC">Tên (Z - A)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=p.price&amp;order=ASC">Giá (Thấp &gt; Cao)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=p.price&amp;order=DESC">Giá (Cao &gt; Thấp)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=rating&amp;order=DESC">Đánh giá (Cao nhất)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=rating&amp;order=ASC">Đánh giá (Thấp nhất)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=p.model&amp;order=ASC">Kiểu (A - Z)</option>
+                                        <option value="http://7427.chilishop.net/ghe?sort=p.model&amp;order=DESC">Kiểu (Z - A)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="inline-text">Hiển thị:</div>
+                                <div class="simple-drop-down display_number_c">
+                                    <select id="input-limit" onchange="location = this.value;">
+                                        <option value="http://7427.chilishop.net/ghe?limit=12" selected="selected">12</option>
+                                        <option value="http://7427.chilishop.net/ghe?limit=25">25</option>
+                                        <option value="http://7427.chilishop.net/ghe?limit=50">50</option>
+                                        <option value="http://7427.chilishop.net/ghe?limit=75">75</option>
+                                        <option value="http://7427.chilishop.net/ghe?limit=100">100</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="row pd-content">
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ban-tron-3-chan">
+                                            <img src="./Ghế_files/5-270x270.jpg" alt="Bàn tròn 3 chân" title="Bàn tròn 3 chân" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="status-sale"> -25%</div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ban-tron-3-chan">Bàn tròn 3 chân</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            <span class="price-old">1.600.000 VNĐ</span>
+                                            <span class="price-new">1.200.000 VNĐ</span>
+
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 78 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 78 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 78 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-bar-pad">
+                                            <img src="./Ghế_files/7-270x270.jpg" alt="Ghế bar PAD" title="Ghế bar PAD" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-bar-pad">Ghế bar PAD</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            900.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 80 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 80 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 80 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-bar-pot">
+                                            <img src="./Ghế_files/18-270x270.jpg" alt="Ghế bar POT" title="Ghế bar POT" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-bar-pot">Ghế bar POT</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            12.000.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 90 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 90 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 90 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="clearfix visible-lg"></div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/Gh%E1%BA%BF%20nh%E1%BB%B1a%20Hansen%20ghe-nhua-hansen">
+                                            <img src="./Ghế_files/23-270x270.jpg" alt="Ghế nhựa Hansen" title="Ghế nhựa Hansen" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/Gh%E1%BA%BF%20nh%E1%BB%B1a%20Hansen%20ghe-nhua-hansen">Ghế nhựa Hansen</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            1.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 93 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 93 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 93 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-phong-cho-charles">
+                                            <img src="./Ghế_files/17-270x270.jpg" alt="Ghế phòng chờ Charles" title="Ghế phòng chờ Charles" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-phong-cho-charles">Ghế phòng chờ Charles</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            12.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 89 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 89 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 89 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-phong-cho-eam">
+                                            <img src="./Ghế_files/16-270x270.jpg" alt="Ghế phòng chờ Eam" title="Ghế phòng chờ Eam" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-phong-cho-eam">Ghế phòng chờ Eam</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            12.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 86 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 86 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 86 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="clearfix visible-lg"></div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-tua-3-chan">
+                                            <img src="./Ghế_files/4-270x270.jpg" alt="Ghế tựa 3 chân" title="Ghế tựa 3 chân" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-tua-3-chan">Ghế tựa 3 chân</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            800.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 77 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 77 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 77 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-tua-erik">
+                                            <img src="./Ghế_files/19-270x270.jpg" alt="Ghế tựa Erik" title="Ghế tựa Erik" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-tua-erik">Ghế tựa Erik</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            1.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 91 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 91 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 91 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-tu-zon">
+                                            <img src="./Ghế_files/21-270x270.jpg" alt="Ghế tựa Zon" title="Ghế tựa Zon" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-tu-zon">Ghế tựa Zon</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            1.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 92 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 92 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 92 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="clearfix visible-lg"></div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-xoay-dasa">
+                                            <img src="./Ghế_files/13-270x270.jpg" alt="Ghế xoay Dasa" title="Ghế xoay Dasa" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-xoay-dasa">Ghế xoay Dasa</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            3.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 85 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 85 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 85 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-dau-georg">
+                                            <img src="./Ghế_files/2-270x270.jpg" alt="Ghế đẩu Georg" title="Ghế đẩu Georg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-dau-georg">Ghế đẩu Georg</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            850.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 75 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 75 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 75 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <div class="product-thumb transition">
+                                <div class="product-inner">
+                                    <div class="image">
+                                        <a href="http://7427.chilishop.net/ghe/ghe-dau-hauteur-93cm">
+                                            <img src="./Ghế_files/30-270x270.jpg" alt="Ghế đẩu Hauteur 93cm" title="Ghế đẩu Hauteur 93cm" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4><a href="http://7427.chilishop.net/ghe/ghe-dau-hauteur-93cm">Ghế đẩu Hauteur 93cm</a></h4>
+                                        <p class="description">Công ty TNHH Nội Thất ABC tự hào là một trong những công ty hàng đầu về tư vấn thiết kế và thi công các công trình nội thất. Công ty đã có một bề dày kinh nghiệ..</p>
+
+                                        <div class="price">
+                                            2.500.000 VNĐ                                                                                
+                                            <div class="rating no-star">
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <button class="bcart" type="button" title="Thêm vào giỏ" onclick="cart.add( & #39; 97 & #39; );">
+                                            <span>Thêm vào giỏ</span>
+                                        </button>
+                                        <div class="button-group">
+                                            <button type="button" title="Thêm Yêu thích" onclick="wishlist.add( & #39; 97 & #39; );">
+                                                <i class="fa fa-heart-o"></i> <span>Thêm Yêu thích</span>
+                                            </button>
+                                            <button type="button" title="Thêm so sánh" onclick="compare.add( & #39; 97 & #39; );">
+                                                <i class="fa fa-compress"></i><span>Thêm so sánh</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="clearfix visible-lg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 text-left"><ul class="pagination"><li class="active"><span>1</span></li><li><a href="http://7427.chilishop.net/ghe?page=2">2</a></li><li><a href="http://7427.chilishop.net/ghe?page=2">&gt;</a></li><li><a href="http://7427.chilishop.net/ghe?page=2">&gt;|</a></li></ul></div>
+                        <div class="col-sm-6 text-right results">Hiển thị từ 1 đến 12 của 13 (2 Trang)</div>
+                    </div>
+                    <div class="position-display">
+                    </div></div>
             </div>
         </div>
-    </div>
-</div>
-
-<?php echo $this->element('product_relate'); ?>

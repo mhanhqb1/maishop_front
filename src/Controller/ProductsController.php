@@ -19,23 +19,7 @@ class ProductsController extends AppController {
      */
     public function beforeRender(Event $event)
     {
-        parent::beforeFilter($event);
-        // Set common param
-        $this->controller = strtolower($this->request->params['controller']);
-        $this->action = strtolower($this->request->params['action']);
-        $this->set('controller', $this->controller);
-        $this->set('action', $this->action);
-//        $this->set('pageTitle', 'Mai Shop 1213');
-        
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
-        
-        $categories = $this->Common->getAllCategories();
-        $this->set('categories', $categories);
-        
+        parent::beforeRender($event);
         $this->viewBuilder()->layout('page');
     }
     
@@ -63,7 +47,12 @@ class ProductsController extends AppController {
             $data = Api::call(Configure::read('API.url_products_detail'), $param);
             $this->set('data', $data);
             if (!empty($data['name'])) {
-                $this->set('pageTitle', $data['name']);
+                $pageTitle = $data['name'];
+                $this->set('pageTitle', $pageTitle);
+                $this->Breadcrumb->setTitle($pageTitle)
+                    ->add(array(
+                        'name' => $pageTitle,
+                    ));
             }
         }
     }

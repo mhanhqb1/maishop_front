@@ -17,6 +17,7 @@ namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Core\Configure;
+use Cake\Routing\Router;
 
 /**
  * Application Controller
@@ -34,6 +35,8 @@ class AppController extends Controller
 
     /** @var object $action Action name. */
     public $action = null;
+    
+    public $currentUrl = null;
 
     /**
      * Initialization hook method.
@@ -51,6 +54,7 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Common');
+        $this->loadComponent('Breadcrumb');
     }
 
     /**
@@ -70,13 +74,22 @@ class AppController extends Controller
             }
         }
         parent::beforeFilter($event);
+        
+        // Breadcrumb
+        if (!empty($this->Breadcrumb->get())) {
+            $this->set('breadcrumbTitle', $this->Breadcrumb->getTitle());
+            $this->set('breadcrumb', $this->Breadcrumb->get());
+        }
 
         // Set common param
         $this->controller = strtolower($this->request->params['controller']);
         $this->action = strtolower($this->request->params['action']);
+        $this->currentUrl = Router::url($this->here, true);
         $this->set('controller', $this->controller);
         $this->set('action', $this->action);
-        $this->set('pageTitle', 'Mai Shop');
+        $this->set('currentUrl', $this->currentUrl);
+        $this->set('pageSize', Configure::read('Config.searchPageSize'));
+        $this->set('pageSort', Configure::read('Config.searchPageSort'));
         
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
@@ -88,5 +101,23 @@ class AppController extends Controller
         $this->set('categories', $categories);
         
         $this->viewBuilder()->layout('maishop');
+    }
+    
+    /**
+     * Commont function to get params of actions in controller.
+     * 
+     * @param array $default List parameter name. Default is array().
+     * @return array
+     */
+    public function getParams($default = array()) {
+        $params = $this->request->query;
+        if (!empty($default)) {
+            foreach ($default as $paramName => $paramValue) {
+                if (!isset($params[$paramName])) {
+                    $params[$paramName] = $paramValue;
+                }
+            }
+        }
+        return $params;
     }
 }

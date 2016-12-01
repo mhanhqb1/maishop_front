@@ -3,7 +3,7 @@
     <head class="active">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>MaiShop</title>
+        <title><?php echo !empty($pageTitle) ? $pageTitle : DEFAULT_SITE_TITLE; ?></title>
         <meta name="description" content="Furniture">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="http://7427.chilishop.net/image/catalog/favicon.png" rel="icon">
@@ -26,6 +26,9 @@
         <script src="<?php echo BASE_URL ?>/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
         <script src="<?php echo BASE_URL ?>/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
         <script src="<?php echo BASE_URL ?>/js/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="<?php echo BASE_URL ?>/js/moment.js" type="text/javascript"></script>
+        <script src="<?php echo BASE_URL ?>/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="<?php echo BASE_URL ?>/js/jquery.elevatezoom.js" type="text/javascript"></script>
         <!--//script zoom product-->
         <script src="<?php echo BASE_URL ?>/js/jquery.scrollUp.min.js" type="text/javascript"></script>
         <script src="<?php echo BASE_URL ?>/js/main.js?<?php echo VERSION_DATE ?>" type="text/javascript"></script>
@@ -45,6 +48,6 @@
         </div>
             
         <?php echo $this->element('footer'); ?>
-        <a id="scrollUp" href="http://7427.chilishop.net/#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+        <a id="scrollUp" href="<?php echo $currentUrl; ?>#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
     </body>
 </html>

@@ -17,7 +17,7 @@
                                 </ul>
                             </div>
                             <input type="hidden" name="code" value="">
-                            <input type="hidden" name="redirect" value="http://7427.chilishop.net/index.php?route=common/home">
+                            <input type="hidden" name="redirect" value="<?php echo BASE_URL; ?>">
                         </form>
                     </div>									</div>
                 <div class="top-right">
@@ -41,7 +41,7 @@
                                 <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
                                     <div class="dv-item-module ">
                                         <div id="logo">
-                                            <a href="http://7427.chilishop.net/index.php?route=common/home">
+                                            <a href="<?php echo BASE_URL; ?>">
                                                 <img src="<?php echo BASE_URL ?>/img/Logo-243x30.png" title="Furniture" alt="Furniture" class="img-responsive ">
                                             </a>
                                         </div>                </div>
@@ -63,7 +63,7 @@
                                                 <div class="close-menu"></div>
                                                 <ul class="menu">
                                                     <li>
-                                                        <a href="http://7427.chilishop.net/index.php?route=common/home">
+                                                        <a href="<?php echo BASE_URL; ?>">
 
                                                             <span>Trang chủ</span>
                                                         </a>
@@ -84,7 +84,7 @@
                                                         <ul class="sub-menu">
                                                             <?php foreach ($categories as $c): ?>
                                                             <li>
-                                                                <a href="http://7427.chilishop.net/ban"><?php echo $c['name']; ?></a>
+                                                                <a href="<?php echo BASE_URL; ?>/categories/index/<?php echo $c['id']; ?>"><?php echo $c['name']; ?></a>
                                                             </li>
                                                             <?php endforeach; ?>
                                                         </ul>
@@ -194,7 +194,7 @@
                             <?php if (!empty($categories)): ?>
                             <?php foreach ($categories as $c): ?>
                             <li>
-                                <a href="http://7427.chilishop.net/ban">
+                                <a href="<?php echo BASE_URL; ?>/categories/index/<?php echo $c['id']; ?>">
                                     <img src="<?php echo $c['image_path']; ?>" class="img-thumbnail">
 
                                     <span><?php echo $c['name']; ?></span>
@@ -211,7 +211,8 @@
                             e.stopPropagation()
                         })
                     })
-                </script>                    </div>
+                </script>                    
+            </div>
         </column>
     </div>
 </div>

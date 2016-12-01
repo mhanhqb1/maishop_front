@@ -11,5 +11,6 @@ Configure::write('API.rewriteUrl', array());
 
 Configure::write('API.url_products_all', 'products/all');
 Configure::write('API.url_products_detail', 'products/detail');
+Configure::write('API.url_products_list', 'products/list');
 
 Configure::write('API.url_categories_all', 'categories/all');

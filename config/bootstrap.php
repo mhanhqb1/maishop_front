@@ -237,6 +237,33 @@ if ($env == 'production') {
     include_once ('development/bootstrap.php');
 }
 
-define('DEFAULT_SITE_TITLE', 'Campus AN');
+define('DEFAULT_SITE_TITLE', 'Mai Shop');
 define('VERSION_DATE', date('Ymd'));
-define('BASE_URL', Router::fullBaseUrl());
+if (!defined('USE_SUB_DIRECTORY')) {
+    define('USE_SUB_DIRECTORY', '');
+}
+define('BASE_URL', Router::fullBaseUrl() . USE_SUB_DIRECTORY);
+Configure::write('Config.PageSize', 10);
+
+Configure::write('Config.searchPageSize', array(
+    1 => 1,
+    10 => 10,
+    15 => 15,
+    20 => 20,
+    25 => 25,
+    50 => 50,
+    75 => 75,
+    100 => 100,
+));
+Configure::write('Config.PageSortDefault', array(
+    'created-DESC' => 'Mặc định'
+));
+Configure::write('Config.searchPageSort', array(
+    'created-DESC' => 'Mặc định',
+    'name-ASC' => 'Tên (A - Z)',
+    'name-DESC' => 'Tên (Z - A)',
+    'price-ASC' => 'Giá (Thấp &gt; Cao)',
+    'price-DESC' => 'Giá (Cao &gt; Thấp)',
+//    'review-ASC' => 'Đánh giá (Thấp nhất)',
+//    'review-DESC' => 'Đánh giá (Cao nhất)'
+));
