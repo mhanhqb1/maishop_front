@@ -153,14 +153,9 @@
                                             </div>
                                         </div>                </div>
                                     <div class="dv-item-module ">
-                                        <div id="cart" class="btn-group btn-block">
-                                            <button type="button" data-toggle="dropdown" data-loading-text="Đang Xử lý..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i><span id="cart-total"><span class="num_product">0</span> <span class="text-cart">sản phẩm  </span> <span class="price">0 VNĐ</span></span></button>
-
-                                            <ul class="dropdown-menu pull-right">
-                                                <li>
-                                                    <p class="empty">Giỏ hàng đang trống!</p>
-                                                </li>
-                                            </ul></div>
+                                        <?php
+                                        echo $this->element('cart');
+                                        ?>
 
                                     </div>
                                 </div>

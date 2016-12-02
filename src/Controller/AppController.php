@@ -37,6 +37,10 @@ class AppController extends Controller
     public $action = null;
     
     public $currentUrl = null;
+    
+    public $Session = array();
+    
+    public $Cart = null;
 
     /**
      * Initialization hook method.
@@ -55,6 +59,10 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('Common');
         $this->loadComponent('Breadcrumb');
+        
+        $this->Session = $this->request->session();
+        $cart = $this->Session->check('Cart') ? $this->Session->read('Cart') : array();
+//        print_r($cart); die();
     }
 
     /**
@@ -90,6 +98,10 @@ class AppController extends Controller
         $this->set('currentUrl', $this->currentUrl);
         $this->set('pageSize', Configure::read('Config.searchPageSize'));
         $this->set('pageSort', Configure::read('Config.searchPageSort'));
+        $session = $this->request->session();
+        $this->set('session', $session);
+        $cart = $this->Session->check('Cart') ? $this->Session->read('Cart') : array();
+        $this->set('cart', $cart);
         
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])

@@ -44,7 +44,7 @@ $(document).ready(function() {
 var cart = {
         add: function(a, b) {
             $.ajax({
-                url: 'index.php',
+                url: baseUrl + '/ajax/addtocart',
                 type: "post",
                 data: "product_id=" + a + "&quantity=" + ("undefined" != typeof b ? b : 1),
                 dataType: "json",
@@ -55,14 +55,19 @@ var cart = {
                     $("#cart > button").button("reset")
                 },
                 success: function(a) {
-                    $(".alert, .text-danger").remove(), a.redirect && (location = a.redirect), a.success && ($("#content").parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + a.success + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>'), setTimeout(function() {
-                        $("#cart > button").html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + a.total + "</span>")
-                    }, 100), $("html, body").animate({
-                        scrollTop: 0
-                    }, "slow"), $("#cart > ul ").load("index.php?route=common/cart/info ul li"))
+                    if (a.error) {
+                        $("#content").parent().before('<div class="alert alert-danger"><i class="fa fa-check-circle"></i> ' + a.error + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                    } else {
+                        $(".alert, .text-danger").remove(), a.redirect && (location = a.redirect), a.success && ($("#content").parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + a.success + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>'), setTimeout(function() {
+                            $("#cart > button").html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + a.total + "</span>")
+                        }, 100), $("html, body").animate({
+                            scrollTop: 0
+                        }, "slow"), $("#cart > ul ").load(baseUrl + "/ajax/getcartinfo ul li"))
+                    }
+                    
                 },
                 error: function() {
-                    alert(1);
+                    $("#content").parent().before('<div class="alert alert-danger"><i class="fa fa-check-circle"></i> loi <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
                 }
             })
         },

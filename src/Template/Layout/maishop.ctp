@@ -50,5 +50,11 @@
             
         <?php echo $this->element('footer'); ?>
         <a id="scrollUp" href="<?php echo $currentUrl; ?>#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+        <script type="text/javascript">
+            var baseUrl = '<?php echo BASE_URL ?>';
+            var controller = '<?php echo $controller ?>';
+            var action = '<?php echo $action ?>';
+            var currentUrl = "<?php echo $currentUrl; ?>";
+        </script>
     </body>
 </html>
