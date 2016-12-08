@@ -17,6 +17,7 @@ namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Core\Configure;
+use Cake\Routing\Router;
 
 /**
  * Application Controller
@@ -34,6 +35,12 @@ class AppController extends Controller
 
     /** @var object $action Action name. */
     public $action = null;
+    
+    public $currentUrl = null;
+    
+    public $Session = array();
+    
+    public $Cart = null;
 
     /**
      * Initialization hook method.
@@ -50,6 +57,12 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Common');
+        $this->loadComponent('Breadcrumb');
+        
+        $this->Session = $this->request->session();
+        $cart = $this->Session->check('Cart') ? $this->Session->read('Cart') : array();
+//        print_r($cart); die();
     }
 
     /**
@@ -68,20 +81,27 @@ class AppController extends Controller
                 return $this->redirect('https://' . env('SERVER_NAME') . $this->here);
             }
         }
-        parent::beforeFilter();
+        parent::beforeFilter($event);
+        
+        // Breadcrumb
+        if (!empty($this->Breadcrumb->get())) {
+            $this->set('breadcrumbTitle', $this->Breadcrumb->getTitle());
+            $this->set('breadcrumb', $this->Breadcrumb->get());
+        }
 
         // Set common param
         $this->controller = strtolower($this->request->params['controller']);
         $this->action = strtolower($this->request->params['action']);
+        $this->currentUrl = Router::url($this->here, true);
         $this->set('controller', $this->controller);
         $this->set('action', $this->action);
-
-        // Only allow mobile access
-        if (Configure::read('Config.SupportPC') != true && !$this->RequestHandler->isMobile() && $this->controller != 'infos') {
-            return $this->redirect('/pc');
-        } else if (Configure::read('Config.SupportPC') != true && $this->RequestHandler->isMobile() && $this->controller == 'infos' && $this->action == 'pc') {
-            return $this->redirect('/');
-        }
+        $this->set('currentUrl', $this->currentUrl);
+        $this->set('pageSize', Configure::read('Config.searchPageSize'));
+        $this->set('pageSort', Configure::read('Config.searchPageSort'));
+        $session = $this->request->session();
+        $this->set('session', $session);
+        $cart = $this->Session->check('Cart') ? $this->Session->read('Cart') : array();
+        $this->set('cart', $cart);
         
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
@@ -89,6 +109,27 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
         
-        $this->viewBuilder()->layout('campus');
+        $categories = $this->Common->getAllCategories();
+        $this->set('categories', $categories);
+        
+        $this->viewBuilder()->layout('maishop');
+    }
+    
+    /**
+     * Commont function to get params of actions in controller.
+     * 
+     * @param array $default List parameter name. Default is array().
+     * @return array
+     */
+    public function getParams($default = array()) {
+        $params = $this->request->query;
+        if (!empty($default)) {
+            foreach ($default as $paramName => $paramValue) {
+                if (!isset($params[$paramName])) {
+                    $params[$paramName] = $paramValue;
+                }
+            }
+        }
+        return $params;
     }
 }
