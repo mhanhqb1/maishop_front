@@ -5,6 +5,6 @@
 
 use Cake\Core\Configure;
 
-Configure::write('API.Host', '');
-Configure::write('Config.HTTPS', false);
-Configure::write('Config.SupportPC', false);
+Configure::write('API.Host', 'https://maishopapi.000webhostapp.com/public/');
+Configure::write('Config.HTTPS', true);
+Configure::write('Config.SupportPC', true);

@@ -75,7 +75,8 @@ try {
     Configure::load('app', 'default', false);
     
     // Load for each environment.
-    $env = getenv('FUEL_ENV');
+//    $env = getenv('FUEL_ENV');
+    $env = 'production';
     if (!$env) {
         $env = 'development';
     }
