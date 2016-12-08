@@ -4,165 +4,83 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitff823e9d30001b9106a9258418af41fa
+class ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810
 {
     public static $files = array (
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
-        'c720f792236cd163ece8049879166850' => __DIR__ . '/..' . '/cakephp/cakephp/src/Core/functions.php',
-        'ede59e3a405fb689cd1cebb7bb1db3fb' => __DIR__ . '/..' . '/cakephp/cakephp/src/Collection/functions.php',
-        '90236b492da7ca2983a2ad6e33e4152e' => __DIR__ . '/..' . '/cakephp/cakephp/src/I18n/functions.php',
-        'b1fc73705e1bec51cd2b20a32cf1c60a' => __DIR__ . '/..' . '/cakephp/cakephp/src/Utility/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
-        array (
-            'Zend\\Diactoros\\' => 15,
-        ),
-        'X' => 
-        array (
-            'XdgBaseDir\\' => 11,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\Yaml\\' => 23,
-            'Symfony\\Component\\VarDumper\\' => 28,
-            'Symfony\\Component\\Filesystem\\' => 29,
-            'Symfony\\Component\\Console\\' => 26,
-            'Symfony\\Component\\Config\\' => 25,
+            'Symfony\\Component\\Validator\\' => 28,
+            'Symfony\\Component\\Translation\\' => 30,
         ),
-        'P' => 
+        'R' => 
         array (
-            'Psy\\' => 4,
-            'Psr\\Http\\Message\\' => 17,
-            'PhpParser\\' => 10,
-            'Phinx\\' => 6,
+            'React\\Promise\\' => 14,
         ),
-        'M' => 
+        'G' => 
         array (
-            'Migrations\\' => 11,
-        ),
-        'D' => 
-        array (
-            'DebugKit\\Test\\Fixture\\' => 22,
-            'DebugKit\\' => 9,
+            'GuzzleHttp\\Subscriber\\Oauth\\' => 28,
+            'GuzzleHttp\\Subscriber\\Log\\' => 26,
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+            'GuzzleHttp\\' => 11,
         ),
         'C' => 
         array (
-            'Cake\\Test\\' => 10,
-            'Cake\\Composer\\' => 14,
-            'Cake\\Chronos\\' => 13,
-            'Cake\\' => 5,
-        ),
-        'B' => 
-        array (
-            'Bake\\' => 5,
-        ),
-        'A' => 
-        array (
-            'Aura\\Intl\\_Config\\' => 18,
-            'App\\Test\\' => 9,
-            'App\\' => 4,
+            'Cardinity\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Zend\\Diactoros\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
-        ),
-        'XdgBaseDir\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
-        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Validator\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/yaml',
+            0 => __DIR__ . '/..' . '/symfony/validator',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
+        'Symfony\\Component\\Translation\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
+        'React\\Promise\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/filesystem',
+            0 => __DIR__ . '/..' . '/react/promise/src',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'GuzzleHttp\\Subscriber\\Oauth\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/console',
+            0 => __DIR__ . '/..' . '/guzzlehttp/oauth-subscriber/src',
         ),
-        'Symfony\\Component\\Config\\' => 
+        'GuzzleHttp\\Subscriber\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/config',
+            0 => __DIR__ . '/..' . '/guzzlehttp/log-subscriber/src',
         ),
-        'Psy\\' => 
+        'GuzzleHttp\\Stream\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psy/psysh/src/Psy',
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'GuzzleHttp\\Ring\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
         ),
-        'PhpParser\\' => 
+        'GuzzleHttp\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Phinx\\' => 
+        'Cardinity\\' => 
         array (
-            0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
+            0 => __DIR__ . '/..' . '/cardinity/cardinity-sdk-php/src',
         ),
-        'Migrations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/migrations/src',
-        ),
-        'DebugKit\\Test\\Fixture\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/debug_kit/tests/Fixture',
-        ),
-        'DebugKit\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/debug_kit/src',
-        ),
-        'Cake\\Test\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/cakephp/tests',
-        ),
-        'Cake\\Composer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/plugin-installer/src',
-        ),
-        'Cake\\Chronos\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/chronos/src',
-        ),
-        'Cake\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/cakephp/src',
-        ),
-        'Bake\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cakephp/bake/src',
-        ),
-        'Aura\\Intl\\_Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/intl/config',
-        ),
-        'App\\Test\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/klarna/kco_rest/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -173,49 +91,39 @@ class ComposerStaticInitff823e9d30001b9106a9258418af41fa
                 0 => __DIR__ . '/..' . '/psr/log',
             ),
         ),
-        'J' => 
-        array (
-            'JakubOnderka\\PhpConsoleHighlighter' => 
-            array (
-                0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
-            ),
-            'JakubOnderka\\PhpConsoleColor' => 
-            array (
-                0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
-            ),
-        ),
         'D' => 
         array (
-            'Detection' => 
+            'Divido' => 
             array (
-                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+                0 => __DIR__ . '/..' . '/divido/divido-php/lib',
             ),
         ),
-        'A' => 
+        'B' => 
         array (
-            'Aura\\Intl' => 
+            'Braintree' => 
             array (
-                0 => __DIR__ . '/..' . '/aura/intl/src',
-            ),
-            'Aura\\Composer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/aura/installer-default/src',
+                0 => __DIR__ . '/..' . '/braintree/braintree_php/lib',
             ),
         ),
     );
 
     public static $classMap = array (
-        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
-        'SqlFormatter' => __DIR__ . '/..' . '/jdorn/sql-formatter/lib/SqlFormatter.php',
+        'scss_formatter' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
+        'scss_formatter_compressed' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
+        'scss_formatter_nested' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
+        'scss_parser' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
+        'scss_server' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
+        'scssc' => __DIR__ . '/..' . '/leafo/scssphp/scss.inc.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitff823e9d30001b9106a9258418af41fa::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitff823e9d30001b9106a9258418af41fa::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitff823e9d30001b9106a9258418af41fa::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitff823e9d30001b9106a9258418af41fa::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcf10b8371a79db84df0e1f7a71ecc810::$classMap;
 
         }, null, ClassLoader::class);
     }
